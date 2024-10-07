@@ -1,0 +1,57 @@
+name: demo_app
+description: "Demo App"
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+#-----------------------------Packages------------------------------------#
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #-----------Utility Package--------------#
+
+  cupertino_icons: ^1.0.8
+
+#-----------State Management--------------#
+
+#-----------Product Specific--------------#
+
+#-----------------------------Packages End------------------------------------#
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  #---------------LOCAL ASSETS----------------#
+
+  assets:
+    - assets/logos
+    - assets/icons/brands
+    - assets/images
+
+  #---------------LOCAL FONT----------------#
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets\fonts\Poppins-Bold.otf
+          weight: 700
+        - asset: assets\fonts\Poppins-SemiBold.otf
+          weight: 600
+        - asset: assets\fonts\Poppins-Medium.otf
+          weight: 500
+        - asset: assets\fonts\Poppins-Regular.otf
+          weight: 400
+        - asset: assets\fonts\Poppins-Light.otf
+          weight: 300
